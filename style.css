@@ -1,0 +1,110 @@
+/* -------------------- Global Reset -------------------- */
+/* Removes default margin and padding from all elements */
+*{
+    margin:0px;
+    padding: 0px;
+}
+h1{
+    margin: 10px ;
+    color: rgb(228, 168, 240);
+    background-color: rgb(104, 70, 108);
+    border-radius: 10px;
+    border: none
+    
+}
+/* -------------------- Body Styling -------------------- */
+/* Sets the background color of the page and centers all text */
+body{
+    background-color: chartreuse;
+    text-align: center;
+    background-image: url(Starr\ Montauns.jpeg);
+    background-size:cover;
+}
+
+/* -------------------- Container Section -------------------- */
+/* This container centers the game area vertically and horizontally */
+.container{
+    height: 70vh; /* Takes 70% of the viewport height */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------------- Game Area -------------------- */
+/* This is the main box that holds all the small boxes (game boxes) */
+.game{
+    height: 60vmin; /* Adjusts with screen size, keeps it square */
+    width: 60vmin;
+    display:flex;
+    flex-wrap: wrap; /* Allows boxes to move to the next line */
+    justify-content: center; /* Centers boxes horizontally */
+    align-items: center; /* Centers boxes vertically */
+    gap: 1.8vmin; /* Adds space between boxes */
+}
+
+/* -------------------- Each Game Box -------------------- */
+/* Styling for each clickable box in the game (like Tic-Tac-Toe boxes) */
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem; /* Rounded corners */
+    border: none; /* No border line */
+    box-shadow: 0 0 1rem rgba(0.9, 0.4,0.3, 0.7); /* Adds shadow effect */
+    font-size: 8vmin; /* Large text inside box */
+    color: black;
+    background-color: rgb(129, 78, 156); /* Light gray background */
+}
+
+/* -------------------- Reset Button -------------------- */
+/* Button to reset the current game */
+#reset{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(29, 6, 46);
+    color: rgb(255, 248, 240);
+    border-radius: 1rem;
+    border: none;
+}
+
+/* -------------------- New Game Button -------------------- */
+/* Button to start a completely new game */
+#New_Game_btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(43, 8, 58);
+    color: rgb(204, 240, 241);
+    border-radius: 5px;
+    border: none;
+    /* font-weight: 700; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+#msg {
+  color: #56055b;
+  font-size: 5vmin;
+  width:500px;
+  margin-bottom: 10px;
+  background-color: rgb(239, 211, 177);
+  border: none;
+  border-radius: 10px;
+}
+
+/* -------------------- Message Area -------------------- */
+/* Shows the winner message or game result text */
+.winner_msg{
+    color: rgb(99, 6, 122);
+    font-size: 5vmin;
+    height: 100vmin; /* Adds space so layout doesn’t jump */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rems;
+    
+}
+
+/* -------------------- Hidden Class -------------------- */
+/* Used to hide the winner message until needed */
+.hide{
+    display:none;
+}
